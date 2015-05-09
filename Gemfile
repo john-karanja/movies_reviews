@@ -44,5 +44,8 @@ group :development, :test do
 
   #Flexible authentication solution for Rails with Warden
   gem 'devise'
+
+  # Easy file attachment management for ActiveRecord
+  gem "paperclip", "~> 4.2"
 end
 
