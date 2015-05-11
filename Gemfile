@@ -50,5 +50,8 @@ group :development, :test do
 
   # Twitter's Bootstrap, converted to Sass and ready to drop into Rails or Compass
   gem 'bootstrap-sass', '~> 3.3.4.1'
+
+  #Intelligent search made easy
+  gem 'searchkick', '~> 0.8.7'
 end
 
