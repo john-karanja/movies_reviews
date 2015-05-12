@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
       </button>
 
-        <%= link_to "Drinks Reviews", root_path, class: "navbar-brand" %>
+        <%= link_to "DrinksApp", root_path, class: "navbar-brand" %>
      
     </div>
 
@@ -21,12 +21,12 @@
         <li><%= link_to "Account", edit_user_registration_path, class: "active" %></li>
       <% else %>
         <li><%= link_to "Sign Up", new_user_registration_path, class: "active" %></li>
-        <li><%= link_to "Sign_in", new_user_session_path, class: "active" %></li>
+        <li><%= link_to "Sign In", new_user_session_path, class: "active" %></li>
       <% end %>
     </ul>
     <%= form_tag search_movies_path, method: :get, class: "navbar-form navbar-right", role: "search" do %>
       <p>
-        <%= text_field_tag :search, params[:search], class: "form-control" %>
+        <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "search" %>
         <%= submit_tag "search", name: nil, class: "btn btn-default" %>
       </p>
       <% end %>
